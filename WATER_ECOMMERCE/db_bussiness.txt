@@ -1,0 +1,61 @@
+USE DB_FINAL
+
+GO
+
+create table Usuario(
+	idUsuario int primary key identity,
+	nombre varchar(15),
+	pass varchar(10),
+	direccion varchar(15),
+	datosContacto varchar(30),
+	rol varchar(15)
+)
+
+go
+
+
+create table Producto(
+	idProducto int primary key identity,
+	nombreProducto char(20),
+	descripcionProducto char(50),
+	precioProducto float,
+	tipoBoteAgua char(20),
+	fechaEnvasado dateTime default getDate()
+)
+
+go
+
+create table Factura(
+	idFactura int primary key identity,
+	idUsuario int ,
+	producto char(20),
+	cantidad int,
+	subtotal float,
+	fecha datetime default getdate()
+)
+
+go
+
+
+create table Ticket(
+	idTicket int primary key identity,
+	idUsuario int,
+	producto  char(20),
+	cantidad int,
+	subtotal float,
+	fecha dateTime default getDate(),
+)
+
+go
+
+
+
+create table Inventario(
+	idProducto int references Producto(idProducto),
+	cantidadProducto int,
+	fechaIngreso dateTime default getDate()
+)
+
+go
+
+
