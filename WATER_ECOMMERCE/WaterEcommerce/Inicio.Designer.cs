@@ -32,18 +32,18 @@
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.Usuarios = new FontAwesome.Sharp.IconMenuItem();
             this.Inventario = new FontAwesome.Sharp.IconMenuItem();
-            this.Ventas = new FontAwesome.Sharp.IconMenuItem();
             this.Roles = new FontAwesome.Sharp.IconMenuItem();
+            this.Ventas = new FontAwesome.Sharp.IconMenuItem();
             this.Cupones = new FontAwesome.Sharp.IconMenuItem();
             this.Reportes = new FontAwesome.Sharp.IconMenuItem();
             this.Categorias = new FontAwesome.Sharp.IconMenuItem();
             this.Clientes = new FontAwesome.Sharp.IconMenuItem();
+            this.Productos = new FontAwesome.Sharp.IconMenuItem();
+            this.Compras = new FontAwesome.Sharp.IconMenuItem();
             this.menuStrip2 = new System.Windows.Forms.MenuStrip();
             this.lblUsuario = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.contenedor = new System.Windows.Forms.Panel();
-            this.Productos = new FontAwesome.Sharp.IconMenuItem();
-            this.Compras = new FontAwesome.Sharp.IconMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -118,22 +118,6 @@
             this.Inventario.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.Inventario.Click += new System.EventHandler(this.iconMenuItem4_Click);
             // 
-            // Ventas
-            // 
-            this.Ventas.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
-            this.Ventas.ForeColor = System.Drawing.Color.White;
-            this.Ventas.IconChar = FontAwesome.Sharp.IconChar.CashRegister;
-            this.Ventas.IconColor = System.Drawing.Color.White;
-            this.Ventas.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.Ventas.IconSize = 72;
-            this.Ventas.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
-            this.Ventas.Name = "Ventas";
-            this.Ventas.Padding = new System.Windows.Forms.Padding(20, 0, 20, 0);
-            this.Ventas.Size = new System.Drawing.Size(119, 104);
-            this.Ventas.Text = "Ventas";
-            this.Ventas.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            this.Ventas.Click += new System.EventHandler(this.Ventas_Click);
-            // 
             // Roles
             // 
             this.Roles.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
@@ -149,6 +133,22 @@
             this.Roles.Text = "Roles";
             this.Roles.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.Roles.Click += new System.EventHandler(this.iconMenuItem1_Click_2);
+            // 
+            // Ventas
+            // 
+            this.Ventas.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
+            this.Ventas.ForeColor = System.Drawing.Color.White;
+            this.Ventas.IconChar = FontAwesome.Sharp.IconChar.CashRegister;
+            this.Ventas.IconColor = System.Drawing.Color.White;
+            this.Ventas.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.Ventas.IconSize = 72;
+            this.Ventas.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.Ventas.Name = "Ventas";
+            this.Ventas.Padding = new System.Windows.Forms.Padding(20, 0, 20, 0);
+            this.Ventas.Size = new System.Drawing.Size(119, 104);
+            this.Ventas.Text = "Ventas";
+            this.Ventas.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.Ventas.Click += new System.EventHandler(this.Ventas_Click);
             // 
             // Cupones
             // 
@@ -214,6 +214,36 @@
             this.Clientes.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.Clientes.Click += new System.EventHandler(this.iconMenuItem5_Click);
             // 
+            // Productos
+            // 
+            this.Productos.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
+            this.Productos.ForeColor = System.Drawing.Color.White;
+            this.Productos.IconChar = FontAwesome.Sharp.IconChar.Computer;
+            this.Productos.IconColor = System.Drawing.Color.White;
+            this.Productos.IconFont = FontAwesome.Sharp.IconFont.Solid;
+            this.Productos.IconSize = 72;
+            this.Productos.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.Productos.Name = "Productos";
+            this.Productos.Padding = new System.Windows.Forms.Padding(20, 0, 20, 0);
+            this.Productos.Size = new System.Drawing.Size(151, 104);
+            this.Productos.Text = "Productos";
+            this.Productos.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            // 
+            // Compras
+            // 
+            this.Compras.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
+            this.Compras.ForeColor = System.Drawing.Color.White;
+            this.Compras.IconChar = FontAwesome.Sharp.IconChar.CartArrowDown;
+            this.Compras.IconColor = System.Drawing.Color.White;
+            this.Compras.IconFont = FontAwesome.Sharp.IconFont.Solid;
+            this.Compras.IconSize = 72;
+            this.Compras.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.Compras.Name = "Compras";
+            this.Compras.Padding = new System.Windows.Forms.Padding(20, 0, 20, 0);
+            this.Compras.Size = new System.Drawing.Size(138, 104);
+            this.Compras.Text = "Compras";
+            this.Compras.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            // 
             // menuStrip2
             // 
             this.menuStrip2.AutoSize = false;
@@ -263,36 +293,6 @@
             this.contenedor.Size = new System.Drawing.Size(1920, 876);
             this.contenedor.TabIndex = 4;
             this.contenedor.Paint += new System.Windows.Forms.PaintEventHandler(this.contenedor_Paint);
-            // 
-            // Productos
-            // 
-            this.Productos.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
-            this.Productos.ForeColor = System.Drawing.Color.White;
-            this.Productos.IconChar = FontAwesome.Sharp.IconChar.Computer;
-            this.Productos.IconColor = System.Drawing.Color.White;
-            this.Productos.IconFont = FontAwesome.Sharp.IconFont.Solid;
-            this.Productos.IconSize = 72;
-            this.Productos.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
-            this.Productos.Name = "Productos";
-            this.Productos.Padding = new System.Windows.Forms.Padding(20, 0, 20, 0);
-            this.Productos.Size = new System.Drawing.Size(151, 104);
-            this.Productos.Text = "Productos";
-            this.Productos.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            // 
-            // Compras
-            // 
-            this.Compras.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
-            this.Compras.ForeColor = System.Drawing.Color.White;
-            this.Compras.IconChar = FontAwesome.Sharp.IconChar.CartArrowDown;
-            this.Compras.IconColor = System.Drawing.Color.White;
-            this.Compras.IconFont = FontAwesome.Sharp.IconFont.Solid;
-            this.Compras.IconSize = 72;
-            this.Compras.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
-            this.Compras.Name = "Compras";
-            this.Compras.Padding = new System.Windows.Forms.Padding(20, 0, 20, 0);
-            this.Compras.Size = new System.Drawing.Size(138, 104);
-            this.Compras.Text = "Compras";
-            this.Compras.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             // 
             // Inicio
             // 
